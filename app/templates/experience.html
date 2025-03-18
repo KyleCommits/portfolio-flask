@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mb-4">Professional Experience</h1>
+
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <div class="input-group">
+                <input type="text" id="skill-search" class="form-control" 
+                       placeholder="Search by skill (e.g. Python, Django)">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="btn-group" role="group">
+                <button class="btn btn-outline-primary filter-btn active" data-type="all">All</button>
+                <button class="btn btn-outline-primary filter-btn" data-type="private">Private Sector</button>
+                <button class="btn btn-outline-primary filter-btn" data-type="government">Government</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="loading" class="text-center d-none">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <div class="row" id="experience-container">
+        <!-- Experience cards will be dynamically inserted here -->
+    </div>
+</div>
+{% endblock %}

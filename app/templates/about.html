@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mb-4">About Me</h1>
+    
+    <section class="mb-5">
+        <h2>Technical Skills</h2>
+        <div class="card">
+            <div class="card-body">
+                <ul class="list-unstyled">
+                    <li class="mb-2">✓ Python (2 & 3), C#, C, C++, Java, JavaScript</li>
+                    <li class="mb-2">✓ Docker, SQL, MySQL, PostgreSQL, MongoDB</li>
+                    <li class="mb-2">✓ Django ORM, Django framework, Django REST Framework</li>
+                    <li class="mb-2">✓ GitHub, Git, Linux, JQuery, HTML, VBScript</li>
+                    <li class="mb-2">✓ Web application development expertise</li>
+                    <li class="mb-2">✓ Database management proficiency</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-5">
+        <h2>Education</h2>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Bachelor of Science in Computer Engineering</h5>
+                <p class="card-text">University of Florida, Gainesville FL</p>
+                <p class="card-text text-muted">Graduated: December 2018</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="text-center mt-4">
+        <a href="{{ url_for('static', filename='documents/Kyle_Schneider_Resume_2025.pdf') }}" 
+           class="btn btn-primary" target="_blank">
+            View Full Resume
+        </a>
+    </div>
+</div>
+{% endblock %}
